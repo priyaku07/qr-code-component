@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Outfit:wght@300;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    background-origin: border-box;
+    background-color:rgb(172, 220, 252);
+    
+}
+root{
+    --white: hsl(0, 0%, 100%);
+    --light-gray : hsl(211, 35%, 61%);
+    --grayish-blue : hsl(220, 15%, 55%);
+    --dark-blue : hsl(218, 44%, 22%);
+}
+img{
+    max-width:100%; 
+}
+body{
+    font-weight: "Outfit" , sans-serif;
+    font-size: 9px;
+    background-color: var(--light-gray);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 1px);
+    /*margin: 1.25rem;*/
+}
+.container{
+    background-color:white;
+    padding: 1.25rem;
+    border-radius: 0.625rem;
+    box-shadow: 7px 7px 7px rgba(0,0,0,0.15);
+    margin-bottom: 2rem;
+    max-width:20%; 
+
+}
+.container img {
+    border-radius: 0.625rem;
+    margin-bottom: 1rem;
+}
+.container h1{
+    color: rgb(4, 4, 48);
+    background-color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.container p {
+    color : rgb(72, 72, 136);
+    text-align: center ;
+}
+.attribution { 
+    font-size: 12px; 
+    text-align: center;
+ }
+.attribution a {
+
+     color: hsl(228, 45%, 44%); 
+    }
+     
+@media (min-width :500px ){
+    .container {
+        width: 400px;
+    }
+
+}
